@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        #groko {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position: relative;
+            animation-name: moveAndChange;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+        }
+        #vs{
+            animation:slidein 3s ease-in-out infinite;
+        }
+        .mydiv{
+            width:100px;
+            height:100px;
+            background-color:blue;
+            animation:rotate 3s 5;
+        }
+        @keyframes rotate {
+            0% {
+                transform: rotate(0deg);
+            }
+            50% {
+                transform: rotate(360deg);
+                background-color: aqua;
+            }
+            100% {
+                transform: rotate(360deg);
+                background-color: burlywood;
+            }
+        }
+        @keyframes slidein {
+            0% {
+                transform: translateX(0);
+            }
+            50% {
+                transform: translateX(100px);
+            }
+            100% {
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes moveAndChange {
+            0% {
+                left: 0;
+                top: 0;
+                background-color: red;
+            }
+            25% {
+                left: 200px;
+                top: 0;
+                background-color: blue;
+            }
+            50% {
+                left: 200px;
+                top: 200px;
+                background-color: green;
+            }
+            75% {
+                left: 0;
+                top: 200px;
+                background-color: yellow;
+            }
+            100% {
+                left: 0;
+                top: 0;
+                background-color: red;
+            }
+        }
+    </style>
+</head>
+<body>
+    <p>Animated Box:</p>
+    <div id="groko"></div>
+</body>
+</html>
