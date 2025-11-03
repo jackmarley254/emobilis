@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form</title>
+    <link rel="icon" href="static/images/image.png" type="image/png">
+</head>
+<body>
+    <h1>Registration Form</h1>
+    <form action="#" method="post">
+        <fieldset><legend>Personal Information</legend>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required placeholder="Enter your username"><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required placeholder="Enter your email"><br><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required placeholder="Enter your password"><br><br>
+        <label for="dob">Date of Birth</label>
+        <input type="date" id="dob" name="dob" required><br><br>
+        <label for="gender">Gender:</label>
+        <input type="radio" id="male" name="gender" value="male" required>
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female" required>
+        <label for="female">Female</label>
+        <input type="radio" id="other" name="gender" value="other" required>
+        <label for="other">Other</label><br><br>
+        <input type="checkbox" id="terms" name="terms" required>
+        </fieldset>
+        <label for="terms">I agree to the terms and conditions</label><br><br>
+        <label for="phone">Phone Number:</label>
+        <select name="phone" id="phone">
+            <option value="+1">+1</option>
+            <option value="+44">+44</option>
+            <option value="+254">+254</option>
+            <option value="+91">+91</option>
+        </select>
+        <input type="tel" id="phone-number" name="phone-number" required placeholder="Enter your phone number"><br><br>
+        <textarea id="address" name="address" rows="4" cols="50" placeholder="Enter your address"></textarea><br><br>
+        <label for="file">Upload:</label><br>
+        <input type="file" id="file" name="file" accept=".txt,.doc,.docx,.pdf"><br><br>
+        <button type="reset">Reset</button>
+        <input type="submit" value="Register">
+    </form>
+</body>
+</html>
